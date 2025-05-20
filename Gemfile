@@ -68,9 +68,9 @@ gem "vite_rails", "~> 3.0"
 gem "avo", ">= 3.2"
 
 group :development, :test do
-  gem 'rspec-rails', '~> 8.0.0'
+  gem "rspec-rails", "~> 8.0.0"
 end
 
 group :development, :test do
-  gem 'factory_bot_rails', '~> 6.4.4'
+  gem "factory_bot_rails", "~> 6.4.4"
 end

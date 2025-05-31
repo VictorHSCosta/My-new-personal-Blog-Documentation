@@ -12,8 +12,13 @@ RSpec.describe Post, type: :model do
       expect(post).not_to be_valid
     end
 
-    it "when post is valid" do
+    it 'when about is nil' do
       post = Post.create(title: "Title valid", description: "Description valid")
+      expect(post).not_to be_valid
+    end
+
+    it "when post is valid" do
+      post = Post.create(title: "Title valid", description: "Description valid", about: "About valid")
       expect(post).to be_valid
     end
   end

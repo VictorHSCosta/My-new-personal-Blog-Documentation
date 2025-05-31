@@ -16,6 +16,7 @@ require 'faker'
 10.times do
   Post.create!(
     title: Faker::Book.title,
-    description: Faker::Lorem.paragraph
+    description: Faker::Lorem.paragraph_by_chars(number: 2560, supplemental: false),
+    about: Faker::Lorem.paragraph_by_chars(number: 256, supplemental: false)
   )
 end

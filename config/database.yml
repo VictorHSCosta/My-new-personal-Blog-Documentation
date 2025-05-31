@@ -10,3 +10,7 @@ default: &default
 development:
   <<: *default
   database: my_personal_blog
+
+test:
+  <<: *default
+  database: my_personal_blog_test

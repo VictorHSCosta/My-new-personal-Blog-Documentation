@@ -220,8 +220,14 @@ GEM
       racc (~> 1.4)
     nokogiri (1.18.8-x86_64-linux-musl)
       racc (~> 1.4)
+    oj (3.16.11)
+      bigdecimal (>= 3.0)
+      ostruct (>= 0.2)
     ostruct (0.6.1)
     pagy (9.3.4)
+    panko_serializer (0.8.3)
+      activesupport
+      oj (> 3.11.0, < 4.0.0)
     parallel (1.27.0)
     parser (3.3.8.0)
       ast (~> 2.4.1)
@@ -439,6 +445,7 @@ DEPENDENCIES
   inertia_rails (~> 3.8)
   jbuilder
   kamal
+  panko_serializer
   pg (~> 1.5)
   propshaft
   puma (>= 5.0)

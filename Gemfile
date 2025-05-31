@@ -76,3 +76,6 @@ group :development, :test do
 end
 
 gem "faker"
+
+
+gem "panko_serializer"

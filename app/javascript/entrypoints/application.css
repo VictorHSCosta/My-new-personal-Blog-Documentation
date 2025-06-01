@@ -3,3 +3,10 @@
 
 @plugin "@tailwindcss/typography";
 @plugin "@tailwindcss/forms";
+
+/* Global IBM Plex Sans font */
+body {
+  font-family: 'IBM Plex Sans', sans-serif !important;
+}
+
+

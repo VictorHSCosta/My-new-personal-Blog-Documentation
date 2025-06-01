@@ -6,9 +6,14 @@ import Layout from '../components/Layout'
 import './application.css';
 
 // Temporary type definition, until @inertiajs/react provides one
-type ResolvedComponent = {
-  default: ReactNode
+import type { ComponentType } from 'react';
+
+type PageComponent = ComponentType & {
   layout?: (page: ReactNode) => ReactNode
+};
+
+type ResolvedComponent = {
+  default: PageComponent
 }
 
 createInertiaApp({
@@ -27,13 +32,9 @@ createInertiaApp({
       eager: true,
     });
     const page = pages[`../pages/${name}.tsx`];
-    if (!page || !page.default) {
-      console.error(`Missing Inertia page component or default export: '${name}.tsx'`);
-      return;
+    if (page && page.default) {
+      page.default.layout ||= (page: ReactNode) => createElement(Layout, null, page);
     }
-
-    (page.default as any).layout ||= (page: ReactNode) => createElement(Layout, null, page);
-
     return page;
   },
 

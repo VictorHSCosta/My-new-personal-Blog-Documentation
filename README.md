@@ -2,7 +2,7 @@ README
 
 Esse é um projeto usado por mim para o estudo das tecnologias mais avançadas do React em parceria com o Rails — um poderoso SPA que permite escrever programas Rails com a facilidade do JavaScript e suas bibliotecas. Isso traz uma surpreendente velocidade de desenvolvimento de software para projetos web de alto nível de performance com o Rails.
 
-31 de Maio de 2025
+## 31 de Maio de 2025
 
 Hoje tive grandes aprendizados com o projeto. Pude quebrar bastante a cabeça com vários bugs, mas foi gratificante no fim entender todo o esquema de configuração de um projeto Rails e conhecer todo o poder de ferramentas muito usadas no Rails.
 

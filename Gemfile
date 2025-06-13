@@ -72,5 +72,5 @@ group :development, :test do
 end
 
 group :development, :test do
-  gem "factory_bot_rails", "~> 6.4.4"
+  gem "factory_bot_rails", "~> 6.5.0"
 end

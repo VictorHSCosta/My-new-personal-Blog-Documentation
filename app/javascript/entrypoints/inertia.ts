@@ -1,7 +1,7 @@
 import { createInertiaApp } from '@inertiajs/react'
 import { createElement, ReactNode } from 'react'
 import { createRoot } from 'react-dom/client'
-import Layout from '../components/Layout'
+import Layout from '../components/Layout/Index'
 
 import './application.css';
 
